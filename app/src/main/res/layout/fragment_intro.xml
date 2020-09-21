@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/intoLayoutContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.IntroFragment">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/intro_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/intro_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/intro_login"
+        app:tabBackground="@drawable/bgn_tab"
+        app:tabGravity="center"
+        app:tabPaddingStart="8dp"
+        app:tabPaddingEnd="8dp"
+        android:layout_marginBottom="12dp"
+        app:tabIndicator="@drawable/bgn_tab_indicator"
+        app:tabIndicatorGravity="center"
+        app:tabMode="fixed"
+        app:tabPadding="4dp" />
+
+    <TextView
+        android:id="@+id/intro_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Login In"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/intro_reg" />
+
+    <TextView
+        android:id="@+id/intro_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:text="Login Up"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/intro_login"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

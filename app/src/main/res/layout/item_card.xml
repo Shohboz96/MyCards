@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_card_content"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="#000"
+    android:layout_marginBottom="6dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/textBank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/in"
+            android:src="@drawable/inc"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="@id/textBank"
+            app:layout_constraintTop_toBottomOf="@id/textBank"/>
+
+
+        <TextView
+            android:id="@+id/name_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mening Kartam"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintLeft_toLeftOf="@id/textBank"
+            app:layout_constraintTop_toBottomOf="@id/balance"/>
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="summa"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="@id/textBank"
+            app:layout_constraintTop_toBottomOf="@id/card_text_number" />
+
+        <TextView
+            android:id="@+id/card_text_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="789125112512412521"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_constraintLeft_toLeftOf="@id/textBank"
+            app:layout_constraintTop_toBottomOf="@id/in" />
+
+        <TextView
+            android:id="@+id/card_muddati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09/27"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_text_number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/textBank"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/white"
+            android:text="Kapitalbank"
+            android:textSize="20sp"
+            android:layout_marginRight="12dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
